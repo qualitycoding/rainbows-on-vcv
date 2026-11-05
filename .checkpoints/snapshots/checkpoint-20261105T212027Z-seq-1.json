@@ -1,0 +1,107 @@
+{
+  "run_id": "20261105T212027Z",
+  "branch": "gen-20261105T212027Z-rainbow-machine-vcv",
+  "sequence": 1,
+  "profiles": [
+    "software"
+  ],
+  "mode_flags": {
+    "software.deploys": false,
+    "audio": true,
+    "courseware": false
+  },
+  "phase": "0",
+  "subphase": "0.3 intake fixed",
+  "active_step_id": "R0",
+  "research_round": 0,
+  "exploration_round": 0,
+  "proof_review_round": 0,
+  "premortem_round": 0,
+  "completed": [
+    "0.1 target identity and push access",
+    "0.3 intake"
+  ],
+  "pending": [
+    "0.3.7 store access",
+    "1.3 research",
+    "2 specification and freeze",
+    "3 plan construction",
+    "4 premortem",
+    "5 push"
+  ],
+  "not_applicable": [
+    "math",
+    "computational",
+    "publication",
+    "courseware"
+  ],
+  "artifacts": {},
+  "execution_context": {
+    "current_objective": "Plan a clean-room EarthQuaker Devices Rainbow Machine V2 behavioral clone for VCV Rack 2; Apache-2.0; no implementation.",
+    "call_stack": [
+      "Phase 1 R0"
+    ],
+    "step_pointer": {
+      "phase": "1",
+      "subphase": "R0",
+      "item_index": 0,
+      "sub_action": "load stores",
+      "retry_count": 0
+    },
+    "scratchpad": "All intake defaults accepted except license Apache-2.0. Target repository empty. Authenticated user qualitycoding has admin/push. Kimi cloud ephemeral; no subagent spawning tool available.",
+    "in_flight_operation": null,
+    "tool_cache": {}
+  },
+  "active_variables": {
+    "intake_parameters": {
+      "hardware": "Rainbow Machine V2",
+      "audio_io": "mono",
+      "platforms": [
+        "windows-x64",
+        "linux-x64",
+        "macos-x64",
+        "macos-arm64"
+      ],
+      "performance": "20x realtime at 48 kHz on pinned CI reference runner",
+      "license": "Apache-2.0",
+      "release": "CI packages only; no public release",
+      "listener": "user"
+    },
+    "user_constraints": [
+      "Use qualitycoding/rainbows-on-vcv",
+      "Do not implement plan steps",
+      "No copied artwork or implied endorsement"
+    ],
+    "open_questions": [],
+    "resolved_questions": [
+      "All ten intake items resolved by user"
+    ],
+    "candidate_decisions": [],
+    "uncommitted_drafts": {},
+    "variable_store": {}
+  },
+  "tier_substitutions": [
+    {
+      "planned": "Fable (Mythos)/Opus/Sonnet/Haiku agents",
+      "actual": "Kimi K3.1 single context",
+      "reason": "No subagent spawning or named tiers available"
+    }
+  ],
+  "open_items": [
+    "Fresh-context cold read, premortem and assumption audit unavailable; perform best-available separated checks and record limitation."
+  ],
+  "lesson_store": {
+    "location": "https://github.com/qualitycoding/Lessons",
+    "commit_read": "",
+    "readable": false
+  },
+  "knowledge_store": {
+    "location": "https://github.com/qualitycoding/knowledge",
+    "commit_read": "",
+    "readable": false
+  },
+  "lessons_loaded": [],
+  "lessons_recorded": [],
+  "knowledge_added": [],
+  "updated_at": "2026-11-05T21:20:28.068255+00:00"
+}
