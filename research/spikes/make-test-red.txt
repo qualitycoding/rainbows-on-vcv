@@ -1,0 +1,33 @@
+g++ -std=c++17 -Wall -Wextra -Werror -pedantic -Isrc tests/frozen_tests.cpp -o /tmp/rainbows-frozen-tests
+/tmp/rainbows-frozen-tests
+T001 RED not implemented: planning stub
+T002 RED not implemented: planning stub
+T003 RED not implemented: planning stub
+T004 RED not implemented: planning stub
+T005 RED not implemented: planning stub
+T006 RED not implemented: planning stub
+T007 RED not implemented: planning stub
+T008 RED not implemented: planning stub
+T009 RED not implemented: planning stub
+T010 RED not implemented: planning stub
+T011 RED not implemented: planning stub
+T012 RED not implemented: planning stub
+T013 RED not implemented: planning stub
+T014 RED not implemented: planning stub
+T015 RED not implemented: planning stub
+T016 RED not implemented: planning stub
+T017 RED not implemented: planning stub
+T018 RED not implemented: planning stub
+T019 RED not implemented: planning stub
+T020 RED not implemented: planning stub
+T021 RED not implemented: planning stub
+T022 RED not implemented: planning stub
+T023 RED not implemented: planning stub
+T024 RED not implemented: planning stub
+T025 RED not implemented: planning stub
+T026 RED not implemented: planning stub
+T027 RED not implemented: planning stub
+T028 RED not implemented: planning stub
+28/28 failing
+make: *** [tests/Makefile:8: test] Error 1
+exit=2

@@ -4,7 +4,7 @@ title: Credential helpers on the durable mount cannot be executed
 status: active
 supersedes: []
 recurrence_of: null
-occurrences: 1
+occurrences: 2
 severity: Medium
 tags: [tech:github, phase:research, kind:environment]
 recorded_by: planner

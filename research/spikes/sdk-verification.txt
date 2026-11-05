@@ -1,0 +1,16 @@
+Rack SDK 2.6.6 Linux archive verification
+420da2452def7b195f98e3a0650c35f1e0f058a98a71840b4347d3d203618532  /mnt/agents/work/rainbow-plan/Rack-SDK-2.6.6-lin-x64.zip
+Verified files:
+/mnt/agents/work/rainbow-plan/sdk-2.6.6/Rack-SDK/include/engine/Module.hpp
+/mnt/agents/work/rainbow-plan/sdk-2.6.6/Rack-SDK/plugin.mk
+Verified APIs:
+233:	void configBypass(int inputId, int outputId) {
+339:	Typically you do not need to override this. Use configBypass() instead.
+349:	Normally you should override dataFromJson().
+365:	virtual void dataFromJson(json_t* rootJ) {}
+417:	virtual void onSampleRateChange(const SampleRateChangeEvent& e) {
+419:		onSampleRateChange();
+462:	/** DEPRECATED. Override `onSampleRateChange(e)` instead. */
+463:	virtual void onSampleRateChange() {}
+Verified mono sum:
+99:	float getVoltageSum() {

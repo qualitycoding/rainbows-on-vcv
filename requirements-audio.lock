@@ -1,0 +1,5 @@
+numpy==2.2.5
+scipy==1.16.2
+soundfile==0.13.1
+PyYAML==6.0.2
+pip-audit==2.9.0

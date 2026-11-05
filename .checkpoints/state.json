@@ -1,7 +1,7 @@
 {
   "run_id": "20261105T212027Z",
   "branch": "gen-20261105T212027Z-rainbow-machine-vcv",
-  "sequence": 2,
+  "sequence": 3,
   "profiles": [
     "software"
   ],
@@ -10,25 +10,28 @@
     "audio": true,
     "courseware": false
   },
-  "phase": "1",
-  "subphase": "1.3 research complete",
-  "active_step_id": "R0",
+  "phase": "4",
+  "subphase": "4.7 audit complete; final consistency pending",
+  "active_step_id": "Phase 5",
   "research_round": 6,
   "exploration_round": 0,
   "proof_review_round": 0,
-  "premortem_round": 0,
+  "premortem_round": 2,
   "completed": [
-    "0.1 target identity and push access",
+    "0.1 environment/access",
     "0.3 intake",
-    "0.3.7 stores readable empty",
-    "1.3 six research rounds"
+    "0.3.7 stores",
+    "1 generation branch/checkpoints",
+    "1.3 six research rounds",
+    "1.3.6 commands and pins",
+    "1.4 environment",
+    "2B interfaces and 28 red tests",
+    "2E traceability and freeze",
+    "3 plan/handoff/cold read",
+    "4 two premortem rounds and assumption audit"
   ],
   "pending": [
-    "1.3.6/1.4 command and pin verification",
-    "2 specification and freeze",
-    "3 plan construction",
-    "4 premortem",
-    "5 push"
+    "5 final consistency and push"
   ],
   "not_applicable": [
     "math",
@@ -39,7 +42,12 @@
   "artifacts": {
     "research/claims.json": "49468ca65eb4393f67739ed0cc2602ba226a1100c1bfdffdbda192655a0c05c5",
     "research/SOURCES.md": "d2360ceda3d41d1321d5bf17d29666774e8251a342a7f1cd9b3ed99c1bf62248",
-    "research/PRIOR_KNOWLEDGE.md": "0624af1ce5ff78e558eeb2cd86308877f259f0da1d3bbe220d60d8ddcdce9e38"
+    "research/PRIOR_KNOWLEDGE.md": "0624af1ce5ff78e558eeb2cd86308877f259f0da1d3bbe220d60d8ddcdce9e38",
+    "plan/PLAN.md": "cda53d17c2fed35612f4cf83940243a3d788fc64d5f73b1c3aff2d94d6143302",
+    "plan/ENVIRONMENT.md": "85d760ab3abf19c8e75dba310fe0b2a8dedce473e1076d7c7ed731b7d22b95c2",
+    "plan/TRACEABILITY.md": "6ff76b99532ca5eded27f22bbde978714b74d3e77cc7597f0bdaf467c28ce980",
+    "tests/FROZEN_MANIFEST.sha256": "332f46869060f0b13eb7c34a62221ae038bc5aed8ecde1012f6b8e6e2a4f35c2",
+    "premortem/ASSUMPTION_AUDIT.md": "b4cc85070ca6761fe9b96cbc63f1f01768189dc83b7689cfd17eb74df63448ff"
   },
   "execution_context": {
     "current_objective": "Plan a clean-room EarthQuaker Devices Rainbow Machine V2 behavioral clone for VCV Rack 2; Apache-2.0; no implementation.",
@@ -53,7 +61,7 @@
       "sub_action": "load stores",
       "retry_count": 0
     },
-    "scratchpad": "All intake defaults accepted except license Apache-2.0. Target repository empty. Authenticated user qualitycoding has admin/push. Kimi cloud ephemeral; no subagent spawning tool available.",
+    "scratchpad": "Plan READY. 14 claims; 28 frozen red tests; 15 steps; 3 gates; residual 6 Medium 5 Low. No implementation performed.",
     "in_flight_operation": null,
     "tool_cache": {}
   },
@@ -108,7 +116,9 @@
   "lessons_loaded": [],
   "lessons_recorded": [
     "L-20261105T213000Z-mount-credential-helper-exec.md",
-    "L-20261105T214500Z-sdk-source-channel.md"
+    "L-20261105T214500Z-sdk-source-channel.md",
+    "L-20261106T120000Z-red-runner-green-path.md",
+    "L-20261106T123000Z-cold-read-explicit-references.md"
   ],
   "knowledge_added": [
     "K-20261106T120000Z-c-001-rainbow-vcv.md",
@@ -126,5 +136,5 @@
     "K-20261106T120012Z-c-013-rainbow-vcv.md",
     "K-20261106T120013Z-c-014-rainbow-vcv.md"
   ],
-  "updated_at": "2026-11-05T21:27:08.980612+00:00"
+  "updated_at": "2026-11-05T21:43:48.904409+00:00"
 }
