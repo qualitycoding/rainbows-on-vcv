@@ -1,0 +1,11 @@
+# sustained chord
+0.0 param pitch 0.39
+0.0 param primary 0.7
+0.0 param secondary 0.7
+0.0 param tracking 0.3
+0.0 note 220.00
+0.02 note 277.18
+0.04 note 329.63
+1.5 param magic 0.6
+1.5 param magicEngaged 1
+3.0 param magicEngaged 0

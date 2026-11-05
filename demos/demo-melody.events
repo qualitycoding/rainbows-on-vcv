@@ -1,0 +1,9 @@
+# melody demo: D-014
+0.0 param pitch 0.5
+0.0 param primary 0.8
+0.0 param secondary 0.5
+0.0 param tracking 0.5
+0.0 note 293.66
+0.6 note 349.23
+1.2 note 392.00
+1.8 note 440.00

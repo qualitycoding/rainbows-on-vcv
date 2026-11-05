@@ -1,0 +1,14 @@
+# fast chord passage
+0.0 param pitch 0.61
+0.0 param primary 0.9
+0.0 param secondary 0.7
+0.0 param tracking 0.7
+0.0 note 164.81
+0.05 note 246.94
+0.10 note 329.63
+0.6 note 174.61
+0.65 note 261.63
+0.70 note 349.23
+1.2 note 196.00
+1.25 note 293.66
+1.30 note 392.00

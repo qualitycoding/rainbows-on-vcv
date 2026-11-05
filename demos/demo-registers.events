@@ -1,0 +1,8 @@
+# low / high registers
+0.0 param primary 0.9
+0.0 param secondary 0.9
+0.0 note 82.41
+0.9 param pitch 0.72
+0.9 note 659.25
+1.8 param pitch 0.28
+1.8 note 1046.50

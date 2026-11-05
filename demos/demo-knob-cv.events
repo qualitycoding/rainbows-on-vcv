@@ -1,0 +1,12 @@
+# every knob / CV sweep
+0.0 param primary 0.8
+0.0 note 261.63
+0.5 param pitch 0.3
+1.0 param pitch 0.7
+1.5 param tracking 0.1
+2.0 param tracking 0.9
+2.5 param tone 0.2
+3.0 param tone 1.0
+3.5 param pitchCv 1.0
+3.5 param pitchAttenuverter 0.5
+4.0 param pitchCv -1.0

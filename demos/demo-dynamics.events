@@ -1,0 +1,8 @@
+# soft-to-loud dynamics
+0.0 param pitch 0.5
+0.0 param primary 0.4
+0.0 note 220.00
+0.8 param primary 0.7
+0.8 note 220.00
+1.6 param primary 1.0
+1.6 note 220.00

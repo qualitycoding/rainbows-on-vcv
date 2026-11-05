@@ -1,0 +1,7 @@
+# ascending magic
+0.0 param primary 0.8
+0.0 note 220.00
+0.5 param magic 0.25
+0.5 param magicEngaged 1
+1.2 param magic 0.65
+1.9 param magic 1.0

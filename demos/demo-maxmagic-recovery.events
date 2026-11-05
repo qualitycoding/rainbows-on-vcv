@@ -1,0 +1,7 @@
+# maximum-magic recovery
+0.0 param primary 0.8
+0.0 param secondary 0.8
+0.0 note 246.94
+0.4 param magic 1.0
+0.4 param magicEngaged 1
+3.0 param magicEngaged 0

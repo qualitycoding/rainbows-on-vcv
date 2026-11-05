@@ -1,0 +1,8 @@
+# momentary / latching gestures
+0.0 param primary 0.7
+0.0 note 293.66
+0.5 param magic 0.6
+0.5 param magicEngaged 1
+1.2 param magicEngaged 0
+1.4 param magicEngaged 1
+1.7 param magicEngaged 0

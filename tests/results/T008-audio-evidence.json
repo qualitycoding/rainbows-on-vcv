@@ -1,0 +1,73 @@
+{
+  "blocked": "references",
+  "demos": [
+    {
+      "events": "demo-dynamics.events",
+      "wav": "demos/demo-dynamics.wav",
+      "sha256": "f911360410a6b467f6d56aad27b0ddf73c1deb5f257e6b600916bc22163f8acc",
+      "identicalSecondRender": true
+    },
+    {
+      "events": "demo-fast-chords.events",
+      "wav": "demos/demo-fast-chords.wav",
+      "sha256": "cc27ad107ae2a5fc8141cb3661240920c20201bc2d94f21710279f6be3d10af4",
+      "identicalSecondRender": true
+    },
+    {
+      "events": "demo-gestures.events",
+      "wav": "demos/demo-gestures.wav",
+      "sha256": "7a6b7c78fa23bb4ecb0792dc6ef0121f08f45111b457d721f1090e5797040593",
+      "identicalSecondRender": true
+    },
+    {
+      "events": "demo-knob-cv.events",
+      "wav": "demos/demo-knob-cv.wav",
+      "sha256": "4221e1f3a6ff3dfbf77b6bac9658afd32b7a1c9c7dd6467696cedfb178132a1d",
+      "identicalSecondRender": true
+    },
+    {
+      "events": "demo-magic-asc.events",
+      "wav": "demos/demo-magic-asc.wav",
+      "sha256": "9e14768b1e3dbb6e9910682c2fe2429d0bcbda787015cdf5bb4267fb083d06de",
+      "identicalSecondRender": true
+    },
+    {
+      "events": "demo-magic-desc.events",
+      "wav": "demos/demo-magic-desc.wav",
+      "sha256": "747c2ed3c7ac38eaeae952577cb10e535f4aea2410db81e8fb3f99c718307d2f",
+      "identicalSecondRender": true
+    },
+    {
+      "events": "demo-maxmagic-recovery.events",
+      "wav": "demos/demo-maxmagic-recovery.wav",
+      "sha256": "1f43fe1be819c0d2c180c249d24e6de61b428984440a1a8e8e5c09b62d3c8e85",
+      "identicalSecondRender": true
+    },
+    {
+      "events": "demo-melody.events",
+      "wav": "demos/demo-melody.wav",
+      "sha256": "0b315b0470eebbb5c1e9b05904de4f28b7a36c947d257efbfb0505de7939de43",
+      "identicalSecondRender": true
+    },
+    {
+      "events": "demo-registers.events",
+      "wav": "demos/demo-registers.wav",
+      "sha256": "69524b55264428cbfebae986569f92731ef64c71c99dbf77defff50916fb2aec",
+      "identicalSecondRender": true
+    },
+    {
+      "events": "demo-sustained-chord.events",
+      "wav": "demos/demo-sustained-chord.wav",
+      "sha256": "6f8c4c45046b244e602dd4182e68572a4c24797c7006c7d4a1a79339fc1f897b",
+      "identicalSecondRender": true
+    },
+    {
+      "events": "demo-unison-chorus.events",
+      "wav": "demos/demo-unison-chorus.wav",
+      "sha256": "302bec059463f82768d8e3392d3f28aabd8d11decfe9eaa9f0b34d100f6648df",
+      "identicalSecondRender": true
+    }
+  ],
+  "reproducible": true,
+  "note": "D-023: no user references; no pairs fabricated"
+}

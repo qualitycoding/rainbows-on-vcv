@@ -12,3 +12,10 @@ Format: UTC | step | attempt | pass/fail/blocked | commit | note.
 - 2026-11-06T06:37Z | S-004 | 1 | pass | — | 10-minute maximum-Magic soak finite, peak 1.02; patch roundtrip + malformed-safe
 - 2026-11-06T06:38Z | S-007(local) | 1 | pass | — | ASan/UBSan 0 findings; perf median 194.98x (min 188.3x) >=20x; RSS 1.9 MiB <=64 MiB
 - 2026-11-06T06:38Z | S-000..S-007 | 1 | pass | — | DEVIATIONS.md recorded: knob quantization (T001), secondary clamp (T002), helper scaffold, zstd shim
+- 2026-11-06T06:45Z | S-006 | 1 | blocked(pass) | — | importer validated; references absent -> blocked: references recorded (D-023), CALIBRATION.md
+- 2026-11-06T06:47Z | S-008 | 1 | pass | — | 11 demos rendered; identical SHA-256 across double renders; T028 green; pairs explicitly not fabricated
+- 2026-11-06T06:50Z | S-REVIEW | 1 | pass | — | CODE_REVIEW.md: 2 Low fixed, 2 Low accepted; 0 unresolved Critical/High
+- 2026-11-06T06:52Z | S-ADVERSARIAL | 1 | pass | — | 10 attacks, 0 breaks under ASan/UBSan
+- 2026-11-06T06:54Z | S-LISTEN | 1 | blocked | — | GATE-G-LISTEN.md written: blocked references; packaging per D-023 halted
+- 2026-11-06T06:56Z | S-RETRO | 1 | pass | — | RETROSPECTIVE.md; 1 new lesson, 2 new knowledge items
+- 2026-11-06T06:57Z | S-KNOW | 1 | halted | — | GATE-G-003.md written awaiting destination confirmation

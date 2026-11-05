@@ -1,0 +1,7 @@
+# unison triple chorus
+0.0 param pitch 0.5
+0.0 param primary 1.0
+0.0 param secondary 1.0
+0.0 note 329.63
+0.7 note 392.00
+1.4 note 493.88

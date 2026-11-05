@@ -34,8 +34,6 @@ struct SpectralMesmerizer : Module {
     rainbows::FlexiSwitch activeSwitch;
     rainbows::FlexiSwitch magicSwitch;
     double uiTime = 0.0;
-    dsp::ClockDivider paramDivider;
-    bool bypassed = false;
 
     SpectralMesmerizer();
 

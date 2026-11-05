@@ -14,6 +14,7 @@
 #include <utility>
 #include <vector>
 #include <chrono>
+#include <ctime>
 #include <sys/resource.h>
 
 namespace rainbows {

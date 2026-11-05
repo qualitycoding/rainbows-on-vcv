@@ -46,7 +46,7 @@ void SpectralMesmerizer::process(const ProcessArgs& args) {
     p.pitchAttenuverter = params[PITCHCV_ATT_PARAM].getValue();
     p.pitchCv = inputs[PITCHCV_INPUT].isConnected() ? inputs[PITCHCV_INPUT].getVoltage(0) : 0.f; // channel 0 (D-007)
     p.active = active;
-    p.magicEngaged = magic && !bypassed; // Magic ineffective when bypassed, latch persists (D-008)
+    p.magicEngaged = magic; // Rack bypass (configBypass) carries audio; latched Magic state persists (D-008)
     engine.setParameters(p);
 
     // Mono sum of poly audio input (D-007).
