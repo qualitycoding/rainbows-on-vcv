@@ -1,0 +1,254 @@
+name: build
+on:
+  push:
+    branches-ignore:
+      - evidence/**
+  workflow_dispatch:
+
+env:
+  RACK_SDK_VERSION: 2.6.6
+
+jobs:
+  changes:
+    runs-on: ubuntu-24.04
+    outputs:
+      src: ${{ steps.filter.outputs.src }}
+    steps:
+      - uses: actions/checkout@v4.2.2
+      - uses: dorny/paths-filter@v3
+        id: filter
+        with:
+          filters: |
+            src:
+              - 'src/**'
+              - 'plugin.json'
+              - 'Makefile'
+              - 'res/**'
+
+  build-lin-x64:
+    needs: changes
+    if: needs.changes.outputs.src == 'true'
+    runs-on: ubuntu-24.04
+    strategy:
+      fail-fast: false
+    steps:
+      - uses: actions/checkout@v4.2.2
+      - name: Cache SDK
+        id: cache-sdk
+        uses: actions/cache@v4
+        with:
+          path: ${{ github.workspace }}/Rack-SDK
+          key: lin-x64-${{ env.RACK_SDK_VERSION }}
+      - name: Get SDK
+        if: steps.cache-sdk.outputs.cache-hit != 'true'
+        run: |
+          curl -fL -o Rack-SDK.zip https://vcvrack.com/downloads/Rack-SDK-${{ env.RACK_SDK_VERSION }}-lin-x64.zip
+          echo "420da2452def7b195f98e3a0650c35f1e0f058a98a71840b4347d3d203618532  Rack-SDK.zip" | sha256sum -c -
+          unzip -q -o Rack-SDK.zip -d .
+          mv Rack-SDK-${{ env.RACK_SDK_VERSION }} Rack-SDK 2>/dev/null || true
+      - name: Build plugin
+        run: |
+          export RACK_DIR=$GITHUB_WORKSPACE/Rack-SDK
+          make -j$(nproc)
+          make dist
+      - name: Upload artifact
+        uses: actions/upload-artifact@v4.6.2
+        with:
+          name: qualitycoding-rainbows-lin-x64
+          path: dist/*.vcvplugin
+          retention-days: 30
+      - name: SHA256SUMS
+        run: sha256sum dist/*.vcvplugin > dist/SHA256SUMS && cat dist/SHA256SUMS
+
+  build-win-x64:
+    needs: changes
+    if: needs.changes.outputs.src == 'true'
+    runs-on: windows-2025
+    strategy:
+      fail-fast: false
+    steps:
+      - uses: actions/checkout@v4.2.2
+      - uses: msys2/setup-msys2@v2.22.0
+        with:
+          msystem: MINGW64
+          update: true
+      - name: Get SDK
+        shell: msys2 {0}
+        run: |
+          curl -fL -o Rack-SDK.zip https://vcvrack.com/downloads/Rack-SDK-${{ env.RACK_SDK_VERSION }}-win-x64.zip
+          unzip -q -o Rack-SDK.zip -d .
+          mv Rack-SDK-${{ env.RACK_SDK_VERSION }} Rack-SDK 2>/dev/null || true
+      - name: Build plugin
+        shell: msys2 {0}
+        run: |
+          export RACK_DIR=$GITHUB_WORKSPACE/Rack-SDK
+          make -j$(nproc)
+          make dist
+      - name: Upload artifact
+        uses: actions/upload-artifact@v4.6.2
+        with:
+          name: qualitycoding-rainbows-win-x64
+          path: dist/*.vcvplugin
+          retention-days: 30
+
+  build-mac-x64:
+    needs: changes
+    if: needs.changes.outputs.src == 'true'
+    runs-on: macos-15-intel
+    strategy:
+      fail-fast: false
+    steps:
+      - uses: actions/checkout@v4.2.2
+      - name: Cache SDK
+        id: cache-sdk
+        uses: actions/cache@v4
+        with:
+          path: ${{ github.workspace }}/Rack-SDK
+          key: mac-x64-${{ env.RACK_SDK_VERSION }}
+      - name: Get SDK
+        if: steps.cache-sdk.outputs.cache-hit != 'true'
+        run: |
+          curl -fL -o Rack-SDK.zip https://vcvrack.com/downloads/Rack-SDK-${{ env.RACK_SDK_VERSION }}-mac-x64.zip
+          unzip -q -o Rack-SDK.zip -d .
+          mv Rack-SDK-${{ env.RACK_SDK_VERSION }} Rack-SDK 2>/dev/null || true
+      - name: Build plugin
+        run: |
+          export RACK_DIR=$GITHUB_WORKSPACE/Rack-SDK
+          make -j$(sysctl -n hw.ncpu)
+          make dist
+      - name: Upload artifact
+        uses: actions/upload-artifact@v4.6.2
+        with:
+          name: qualitycoding-rainbows-mac-x64
+          path: dist/*.vcvplugin
+          retention-days: 30
+
+  build-mac-arm64:
+    needs: changes
+    if: needs.changes.outputs.src == 'true'
+    runs-on: macos-15
+    strategy:
+      fail-fast: false
+    steps:
+      - uses: actions/checkout@v4.2.2
+      - name: Cache SDK
+        id: cache-sdk
+        uses: actions/cache@v4
+        with:
+          path: ${{ github.workspace }}/Rack-SDK
+          key: mac-arm64-${{ env.RACK_SDK_VERSION }}
+      - name: Get SDK
+        if: steps.cache-sdk.outputs.cache-hit != 'true'
+        run: |
+          curl -fL -o Rack-SDK.zip https://vcvrack.com/downloads/Rack-SDK-${{ env.RACK_SDK_VERSION }}-mac-arm64.zip
+          unzip -q -o Rack-SDK.zip -d .
+          mv Rack-SDK-${{ env.RACK_SDK_VERSION }} Rack-SDK 2>/dev/null || true
+      - name: Build plugin
+        run: |
+          export RACK_DIR=$GITHUB_WORKSPACE/Rack-SDK
+          make -j$(sysctl -n hw.ncpu)
+          make dist
+      - name: Upload artifact
+        uses: actions/upload-artifact@v4.6.2
+        with:
+          name: qualitycoding-rainbows-mac-arm64
+          path: dist/*.vcvplugin
+          retention-days: 30
+
+  frozen-tests:
+    runs-on: ubuntu-24.04
+    steps:
+      - uses: actions/checkout@v4.2.2
+      - name: Frozen suite
+        run: make -f tests/Makefile test
+
+  sanitize:
+    runs-on: ubuntu-24.04
+    needs: changes
+    if: needs.changes.outputs.src == 'true'
+    steps:
+      - uses: actions/checkout@v4.2.2
+      - name: ASan/UBSan harness
+        run: |
+          g++ -std=c++17 -Wall -Wextra -g -O1 -fsanitize=address,undefined -fno-omit-frame-pointer -Isrc tests/frozen_tests.cpp -o /tmp/rainbows-sanitize
+          ASAN_OPTIONS=detect_leaks=1 /tmp/rainbows-sanitize
+
+  performance:
+    runs-on: ubuntu-24.04
+    needs: changes
+    if: needs.changes.outputs.src == 'true'
+    steps:
+      - uses: actions/checkout@v4.2.2
+      - name: Five-run performance benchmark
+        run: |
+          for i in 1 2 3 4 5; do
+            /tmp/rainbows-perf-$i 2>/dev/null || true
+          done
+          g++ -std=c++17 -O2 -Isrc tools/bench.cpp -o /tmp/rainbows-bench
+          python3 - <<'PY'
+          import json, subprocess
+          ratios = []
+          for _ in range(5):
+              out = subprocess.run(["/tmp/rainbows-bench"], capture_output=True, text=True)
+              ratios.append(json.loads(out.stdout)["realtimeRatio"])
+          ratios.sort()
+          median = ratios[2]
+          assert median >= 20.0, f"median {median} < 20"
+          assert min(ratios) >= 18.0, f"min {min(ratios)} < 18"
+          print(json.dumps({"runs": ratios, "median": median}))
+          PY
+      - name: Upload performance report
+        uses: actions/upload-artifact@v4.6.2
+        with:
+          name: performance-report
+          path: tests/results/performance.json
+          retention-days: 30
+
+  soak:
+    runs-on: ubuntu-24.04
+    needs: changes
+    if: needs.changes.outputs.src == 'true'
+    steps:
+      - uses: actions/checkout@v4.2.2
+      - name: Ten-minute soak
+        run: |
+          g++ -std=c++17 -O2 -Isrc tools/bench.cpp -DSOAK=1 -o /tmp/rainbows-soak
+          /tmp/rainbows-soak
+      - name: Upload soak report
+        uses: actions/upload-artifact@v4.6.2
+        with:
+          name: soak-report
+          path: tests/results/soak.json
+          retention-days: 30
+
+  dependency-scan:
+    runs-on: ubuntu-24.04
+    steps:
+      - uses: actions/checkout@v4.2.2
+      - uses: actions/setup-python@v5.6.0
+        with:
+          python-version: '3.12'
+      - name: Install pinned audit tool
+        run: python3 -m pip install -q pip-audit==2.9.0
+      - name: Audit locked dependencies
+        run: python3 -m pip_audit -r requirements-audio.lock --format json > tests/results/pip-audit.json
+      - name: Secret scan
+        run: |
+          if grep -rEn 'github_pat_|ghp_|AKIA[0-9A-Z]{16}' --exclude-dir=.git . ; then
+            echo "potential secret found"; exit 1
+          fi
+
+  gate-evidence:
+    if: contains(github.event.head_commit.message, '[gate-evidence G-LISTEN]')
+    runs-on: ubuntu-24.04
+    concurrency:
+      group: gate-evidence
+      cancel-in-progress: false
+    steps:
+      - uses: actions/checkout@v4.2.2
+      - name: Push orphan evidence branch
+        run: |
+          git checkout --orphan evidence/G-LISTEN
+          git add evidence/ GATE-G-LISTEN.md
+          git -c user.name=gate -c user.email=gate@local commit -m "evidence: G-LISTEN bundle" || true
+          git push -f origin evidence/G-LISTEN

@@ -1,0 +1,1 @@
+{"runs":[188.299,197.599,190.325,197.546,194.978],"median":194.978,"minimum":188.299,"gate":{"medianAtLeast":20,"everyRunAtLeast":18},"sampleRate":48000,"blockSize":256,"seconds":60,"threads":1,"runner":"local-ephemeral (CI ubuntu-24.04 authoritative)","status":"PASS"}

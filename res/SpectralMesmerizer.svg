@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="60mm" height="128.5mm" viewBox="0 0 60 128.5">
+  <rect width="60" height="128.5" rx="2" fill="#20242c"/>
+  <rect x="1" y="1" width="58" height="126.5" rx="1.5" fill="none" stroke="#5a6478" stroke-width="0.5"/>
+  <text x="30" y="10" font-family="sans-serif" font-size="4.5" fill="#e8ecf4" text-anchor="middle">SPECTRAL MESMERIZER</text>
+  <text x="30" y="15" font-family="sans-serif" font-size="2.2" fill="#8b96ab" text-anchor="middle">clean-room pitch / delay effect</text>
+  <text x="30" y="20" font-family="sans-serif" font-size="2" fill="#8b96ab" text-anchor="middle">unofficial clone - no affiliation</text>
+  <circle cx="30" cy="90" r="34" fill="none" stroke="#3a4254" stroke-width="0.6" opacity="0.5"/>
+  <circle cx="30" cy="90" r="26" fill="none" stroke="#3a4254" stroke-width="0.6" opacity="0.5"/>
+  <text x="30" y="119" font-family="sans-serif" font-size="2" fill="#8b96ab" text-anchor="middle">qualitycoding - Apache-2.0</text>
+</svg>

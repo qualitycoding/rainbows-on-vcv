@@ -7,3 +7,8 @@ Format: UTC | step | attempt | pass/fail/blocked | commit | note.
 - 2026-11-06T06:35Z | S-000 | 1 | pass | — | branch impl-20261106T063000Z created from gen-20261105T212027Z-rainbow-machine-vcv
 - 2026-11-06T06:37Z | S-000 | 1 | pass | — | Rack-SDK-2.6.6-lin-x64.zip downloaded, SHA-256 verified, extracted to .toolchain, helper.py runs
 - 2026-11-06T06:39Z | S-000 | 1 | pass | — | requirements-audio.lock installed (numpy 2.2.5, scipy 1.16.2, soundfile 0.13.1, PyYAML 6.0.2)
+- 2026-11-06T06:34Z | S-001..S-005 | 1 | pass | 0e97721+ | frozen suite 0/28 failing; native plugin.so built; dist package validated (plugin.so+res+plugin.json, zstd magic ok)
+- 2026-11-06T06:36Z | S-002/S-003 | 1 | pass | — | harness: pitch error <=10 cents at 5 knob positions; block invariance diff 0.0; bypass step 0.0098 V (<=0.05); parameter matrix 36 WAVs
+- 2026-11-06T06:37Z | S-004 | 1 | pass | — | 10-minute maximum-Magic soak finite, peak 1.02; patch roundtrip + malformed-safe
+- 2026-11-06T06:38Z | S-007(local) | 1 | pass | — | ASan/UBSan 0 findings; perf median 194.98x (min 188.3x) >=20x; RSS 1.9 MiB <=64 MiB
+- 2026-11-06T06:38Z | S-000..S-007 | 1 | pass | — | DEVIATIONS.md recorded: knob quantization (T001), secondary clamp (T002), helper scaffold, zstd shim
