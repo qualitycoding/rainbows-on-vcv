@@ -1,7 +1,7 @@
 {
   "run_id": "20261105T212027Z",
   "branch": "gen-20261105T212027Z-rainbow-machine-vcv",
-  "sequence": 1,
+  "sequence": 2,
   "profiles": [
     "software"
   ],
@@ -10,20 +10,21 @@
     "audio": true,
     "courseware": false
   },
-  "phase": "0",
-  "subphase": "0.3 intake fixed",
+  "phase": "1",
+  "subphase": "1.3 research complete",
   "active_step_id": "R0",
-  "research_round": 0,
+  "research_round": 6,
   "exploration_round": 0,
   "proof_review_round": 0,
   "premortem_round": 0,
   "completed": [
     "0.1 target identity and push access",
-    "0.3 intake"
+    "0.3 intake",
+    "0.3.7 stores readable empty",
+    "1.3 six research rounds"
   ],
   "pending": [
-    "0.3.7 store access",
-    "1.3 research",
+    "1.3.6/1.4 command and pin verification",
     "2 specification and freeze",
     "3 plan construction",
     "4 premortem",
@@ -35,7 +36,11 @@
     "publication",
     "courseware"
   ],
-  "artifacts": {},
+  "artifacts": {
+    "research/claims.json": "49468ca65eb4393f67739ed0cc2602ba226a1100c1bfdffdbda192655a0c05c5",
+    "research/SOURCES.md": "d2360ceda3d41d1321d5bf17d29666774e8251a342a7f1cd9b3ed99c1bf62248",
+    "research/PRIOR_KNOWLEDGE.md": "0624af1ce5ff78e558eeb2cd86308877f259f0da1d3bbe220d60d8ddcdce9e38"
+  },
   "execution_context": {
     "current_objective": "Plan a clean-room EarthQuaker Devices Rainbow Machine V2 behavioral clone for VCV Rack 2; Apache-2.0; no implementation.",
     "call_stack": [
@@ -92,16 +97,34 @@
   ],
   "lesson_store": {
     "location": "https://github.com/qualitycoding/Lessons",
-    "commit_read": "",
-    "readable": false
+    "commit_read": "empty/no HEAD",
+    "readable": true
   },
   "knowledge_store": {
     "location": "https://github.com/qualitycoding/knowledge",
-    "commit_read": "",
-    "readable": false
+    "commit_read": "empty/no HEAD",
+    "readable": true
   },
   "lessons_loaded": [],
-  "lessons_recorded": [],
-  "knowledge_added": [],
-  "updated_at": "2026-11-05T21:20:28.068255+00:00"
+  "lessons_recorded": [
+    "L-20261105T213000Z-mount-credential-helper-exec.md",
+    "L-20261105T214500Z-sdk-source-channel.md"
+  ],
+  "knowledge_added": [
+    "K-20261106T120000Z-c-001-rainbow-vcv.md",
+    "K-20261106T120001Z-c-002-rainbow-vcv.md",
+    "K-20261106T120002Z-c-003-rainbow-vcv.md",
+    "K-20261106T120003Z-c-004-rainbow-vcv.md",
+    "K-20261106T120004Z-c-005-rainbow-vcv.md",
+    "K-20261106T120005Z-c-006-rainbow-vcv.md",
+    "K-20261106T120006Z-c-007-rainbow-vcv.md",
+    "K-20261106T120007Z-c-008-rainbow-vcv.md",
+    "K-20261106T120008Z-c-009-rainbow-vcv.md",
+    "K-20261106T120009Z-c-010-rainbow-vcv.md",
+    "K-20261106T120010Z-c-011-rainbow-vcv.md",
+    "K-20261106T120011Z-c-012-rainbow-vcv.md",
+    "K-20261106T120012Z-c-013-rainbow-vcv.md",
+    "K-20261106T120013Z-c-014-rainbow-vcv.md"
+  ],
+  "updated_at": "2026-11-05T21:27:08.980612+00:00"
 }

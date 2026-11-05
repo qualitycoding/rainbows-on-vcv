@@ -1,0 +1,401 @@
+[
+  {
+    "id": "C-001",
+    "claim": "Pitch spans perfect fourth below (\u22125 semitones) through major third above (+4), with unison at noon.",
+    "kind": "software",
+    "load_bearing": true,
+    "sources": [
+      {
+        "url": "https://www.earthquakerdevices.com/rainbow-machine",
+        "doi": "",
+        "title": "EarthQuaker Devices \u2014 Rainbow Machine V2",
+        "version": "V2",
+        "locator": "relevant section recorded in research/SOURCES.md",
+        "accessed": "2026-11-06",
+        "tier": 1
+      },
+      {
+        "url": "https://www.earthquakerdevices.com/blog-posts/2016/11/4/aarons-bass-hole-hitchhikers-guide-to-the-rainbow-machine",
+        "doi": "",
+        "title": "EarthQuaker Devices \u2014 Hitchhiker\u2019s Guide to the Rainbow Machine",
+        "version": "version-independent",
+        "locator": "relevant section recorded in research/SOURCES.md",
+        "accessed": "2026-11-06",
+        "tier": 1
+      }
+    ],
+    "confidence": "corroborated",
+    "evidence_class": "n/a",
+    "contradicted_by": [],
+    "informs": [
+      "D-002",
+      "T-001"
+    ]
+  },
+  {
+    "id": "C-002",
+    "claim": "Primary controls wet harmony level; Secondary adds direction-dependent octave and an extra chorus voice at unison.",
+    "kind": "software",
+    "load_bearing": true,
+    "sources": [
+      {
+        "url": "https://www.earthquakerdevices.com/rainbow-machine",
+        "doi": "",
+        "title": "EarthQuaker Devices \u2014 Rainbow Machine V2",
+        "version": "V2",
+        "locator": "relevant section recorded in research/SOURCES.md",
+        "accessed": "2026-11-06",
+        "tier": 1
+      },
+      {
+        "url": "https://www.earthquakerdevices.com/blog-posts/2016/11/4/aarons-bass-hole-hitchhikers-guide-to-the-rainbow-machine",
+        "doi": "",
+        "title": "EarthQuaker Devices \u2014 Hitchhiker\u2019s Guide to the Rainbow Machine",
+        "version": "version-independent",
+        "locator": "relevant section recorded in research/SOURCES.md",
+        "accessed": "2026-11-06",
+        "tier": 1
+      }
+    ],
+    "confidence": "corroborated",
+    "evidence_class": "n/a",
+    "contradicted_by": [],
+    "informs": [
+      "D-004",
+      "T-002/T-003"
+    ]
+  },
+  {
+    "id": "C-003",
+    "claim": "Tracking controls wet/dry lag; higher V2 settings give shorter lag and tighter tracking.",
+    "kind": "software",
+    "load_bearing": true,
+    "sources": [
+      {
+        "url": "https://www.earthquakerdevices.com/rainbow-machine",
+        "doi": "",
+        "title": "EarthQuaker Devices \u2014 Rainbow Machine V2",
+        "version": "V2",
+        "locator": "relevant section recorded in research/SOURCES.md",
+        "accessed": "2026-11-06",
+        "tier": 1
+      },
+      {
+        "url": "https://www.earthquakerdevices.com/blog-posts/2016/11/4/aarons-bass-hole-hitchhikers-guide-to-the-rainbow-machine",
+        "doi": "",
+        "title": "EarthQuaker Devices \u2014 Hitchhiker\u2019s Guide to the Rainbow Machine",
+        "version": "version-independent",
+        "locator": "relevant section recorded in research/SOURCES.md",
+        "accessed": "2026-11-06",
+        "tier": 1
+      }
+    ],
+    "confidence": "corroborated",
+    "evidence_class": "n/a",
+    "contradicted_by": [],
+    "informs": [
+      "D-005",
+      "T-004"
+    ]
+  },
+  {
+    "id": "C-004",
+    "claim": "V2 Tone is brighter clockwise and darker counterclockwise in the effected path.",
+    "kind": "software",
+    "load_bearing": true,
+    "sources": [
+      {
+        "url": "https://www.earthquakerdevices.com/rainbow-machine",
+        "doi": "",
+        "title": "EarthQuaker Devices \u2014 Rainbow Machine V2",
+        "version": "V2",
+        "locator": "relevant section recorded in research/SOURCES.md",
+        "accessed": "2026-11-06",
+        "tier": 1
+      }
+    ],
+    "confidence": "single-source",
+    "evidence_class": "n/a",
+    "contradicted_by": [],
+    "informs": [
+      "D-006",
+      "T-005/R-002"
+    ]
+  },
+  {
+    "id": "C-005",
+    "claim": "Magic feeds Primary and Secondary back into themselves and each other; feedback repeats ascend or descend according to Pitch.",
+    "kind": "software",
+    "load_bearing": true,
+    "sources": [
+      {
+        "url": "https://www.earthquakerdevices.com/rainbow-machine",
+        "doi": "",
+        "title": "EarthQuaker Devices \u2014 Rainbow Machine V2",
+        "version": "V2",
+        "locator": "relevant section recorded in research/SOURCES.md",
+        "accessed": "2026-11-06",
+        "tier": 1
+      },
+      {
+        "url": "https://www.earthquakerdevices.com/blog-posts/2016/11/4/aarons-bass-hole-hitchhikers-guide-to-the-rainbow-machine",
+        "doi": "",
+        "title": "EarthQuaker Devices \u2014 Hitchhiker\u2019s Guide to the Rainbow Machine",
+        "version": "version-independent",
+        "locator": "relevant section recorded in research/SOURCES.md",
+        "accessed": "2026-11-06",
+        "tier": 1
+      }
+    ],
+    "confidence": "corroborated",
+    "evidence_class": "n/a",
+    "contradicted_by": [],
+    "informs": [
+      "D-003",
+      "T-006/T-007"
+    ]
+  },
+  {
+    "id": "C-006",
+    "claim": "V2 Activate and Magic support both tap-to-latch and hold-for-momentary operation.",
+    "kind": "software",
+    "load_bearing": true,
+    "sources": [
+      {
+        "url": "https://www.earthquakerdevices.com/rainbow-machine",
+        "doi": "",
+        "title": "EarthQuaker Devices \u2014 Rainbow Machine V2",
+        "version": "V2",
+        "locator": "relevant section recorded in research/SOURCES.md",
+        "accessed": "2026-11-06",
+        "tier": 1
+      }
+    ],
+    "confidence": "single-source",
+    "evidence_class": "n/a",
+    "contradicted_by": [],
+    "informs": [
+      "D-008",
+      "T-016/R-002"
+    ]
+  },
+  {
+    "id": "C-007",
+    "claim": "A real-time polyphonic pitch shifter can use two crossfaded time-varying delay branches; overlap and grain length trade glitches against combing/latency.",
+    "kind": "software",
+    "load_bearing": true,
+    "sources": [
+      {
+        "url": "https://www.mathworks.com/help/audio/ug/delay-based-pitch-shifter.html",
+        "doi": "",
+        "title": "MathWorks \u2014 Delay-Based Pitch Shifter",
+        "version": "version-independent",
+        "locator": "relevant section recorded in research/SOURCES.md",
+        "accessed": "2026-11-06",
+        "tier": 1
+      },
+      {
+        "url": "https://dafx.de/paper-archive/2026/papers/DAFx26_paper_05.pdf",
+        "doi": "",
+        "title": "DAFx \u2014 Shimmer reverberation with nonlinear feedback delay networks",
+        "version": "version-independent",
+        "locator": "relevant section recorded in research/SOURCES.md",
+        "accessed": "2026-11-06",
+        "tier": 1
+      }
+    ],
+    "confidence": "corroborated",
+    "evidence_class": "n/a",
+    "contradicted_by": [],
+    "informs": [
+      "D-003",
+      "T-009/T-010"
+    ]
+  },
+  {
+    "id": "C-008",
+    "claim": "Rack modules implement process(ProcessArgs), configure parameters/ports, build with RACK_DIR and make, and package with make dist.",
+    "kind": "software",
+    "load_bearing": true,
+    "sources": [
+      {
+        "url": "https://vcvrack.com/manual/PluginDevelopmentTutorial",
+        "doi": "",
+        "title": "VCV Rack \u2014 Plugin Development Tutorial",
+        "version": "version-independent",
+        "locator": "relevant section recorded in research/SOURCES.md",
+        "accessed": "2026-11-06",
+        "tier": 1
+      }
+    ],
+    "confidence": "verified",
+    "evidence_class": "n/a",
+    "contradicted_by": [],
+    "informs": [
+      "D-007",
+      "S-SCAFFOLD"
+    ]
+  },
+  {
+    "id": "C-009",
+    "claim": "Mono audio inputs should sum polyphonic cables; typical audio is \u00b15 V; non-finite output must be suppressed.",
+    "kind": "software",
+    "load_bearing": true,
+    "sources": [
+      {
+        "url": "https://vcvrack.com/manual/VoltageStandards",
+        "doi": "",
+        "title": "VCV Rack \u2014 Voltage Standards",
+        "version": "version-independent",
+        "locator": "relevant section recorded in research/SOURCES.md",
+        "accessed": "2026-11-06",
+        "tier": 1
+      }
+    ],
+    "confidence": "verified",
+    "evidence_class": "n/a",
+    "contradicted_by": [],
+    "informs": [
+      "D-007",
+      "T-015/T-019"
+    ]
+  },
+  {
+    "id": "C-010",
+    "claim": "Apache-2.0 distribution as a free Rack plug-in requires the VCV non-commercial exception; copied Rack code would impose GPLv3.",
+    "kind": "software",
+    "load_bearing": true,
+    "sources": [
+      {
+        "url": "https://vcvrack.com/manual/PluginLicensing",
+        "doi": "",
+        "title": "VCV Rack \u2014 Plugin Licensing and Ethics",
+        "version": "version-independent",
+        "locator": "relevant section recorded in research/SOURCES.md",
+        "accessed": "2026-11-06",
+        "tier": 1
+      }
+    ],
+    "confidence": "single-source",
+    "evidence_class": "n/a",
+    "contradicted_by": [],
+    "informs": [
+      "D-001",
+      "G-002/T-021"
+    ]
+  },
+  {
+    "id": "C-011",
+    "claim": "VCV Library distribution forbids cloning brand/model names, logos, panel design, or component layout without owner permission.",
+    "kind": "software",
+    "load_bearing": true,
+    "sources": [
+      {
+        "url": "https://vcvrack.com/manual/PluginLicensing",
+        "doi": "",
+        "title": "VCV Rack \u2014 Plugin Licensing and Ethics",
+        "version": "version-independent",
+        "locator": "relevant section recorded in research/SOURCES.md",
+        "accessed": "2026-11-06",
+        "tier": 1
+      },
+      {
+        "url": "https://vcvrack.com/manual/Manifest",
+        "doi": "",
+        "title": "VCV Rack \u2014 Plugin Manifest",
+        "version": "version-independent",
+        "locator": "relevant section recorded in research/SOURCES.md",
+        "accessed": "2026-11-06",
+        "tier": 1
+      }
+    ],
+    "confidence": "corroborated",
+    "evidence_class": "n/a",
+    "contradicted_by": [],
+    "informs": [
+      "D-012",
+      "G-002/T-021"
+    ]
+  },
+  {
+    "id": "C-012",
+    "claim": "Rack SDK 2.6.6 exists for Windows x64, Linux x64, macOS x64 and macOS ARM64.",
+    "kind": "software",
+    "load_bearing": true,
+    "sources": [
+      {
+        "url": "https://vcvrack.com/downloads/",
+        "doi": "",
+        "title": "VCV Rack \u2014 Downloads",
+        "version": "Rack SDK 2.6.6",
+        "locator": "relevant section recorded in research/SOURCES.md",
+        "accessed": "2026-11-06",
+        "tier": 1
+      }
+    ],
+    "confidence": "verified",
+    "evidence_class": "n/a",
+    "contradicted_by": [],
+    "informs": [
+      "D-013",
+      "S-CI"
+    ]
+  },
+  {
+    "id": "C-013",
+    "claim": "ubuntu-24.04, windows-2025, macos-15-intel and macos-15 are valid versioned public-runner labels.",
+    "kind": "software",
+    "load_bearing": true,
+    "sources": [
+      {
+        "url": "https://docs.github.com/en/actions/reference/runners/github-hosted-runners",
+        "doi": "",
+        "title": "GitHub \u2014 GitHub-hosted runners reference",
+        "version": "version-independent",
+        "locator": "relevant section recorded in research/SOURCES.md",
+        "accessed": "2026-11-06",
+        "tier": 1
+      }
+    ],
+    "confidence": "corroborated",
+    "evidence_class": "n/a",
+    "contradicted_by": [],
+    "informs": [
+      "D-013",
+      "T-024"
+    ]
+  },
+  {
+    "id": "C-014",
+    "claim": "Blind listening uses 12 seeded, RMS-matched pairs and demos; \u22648/12 is necessary but qualitative audible defects or clear reversed discrimination also require iteration.",
+    "kind": "software",
+    "load_bearing": true,
+    "sources": [
+      {
+        "url": "https://github.com/qualitycoding/skills/tree/main/skills/audio-blind-listening-validation",
+        "doi": "",
+        "title": "qualitycoding/skills \u2014 audio-blind-listening-validation",
+        "version": "version-independent",
+        "locator": "relevant section recorded in research/SOURCES.md",
+        "accessed": "2026-11-06",
+        "tier": 1
+      },
+      {
+        "url": "memory:topic/qualitycoding-vst-listening-status.md",
+        "doi": "",
+        "title": "Prior qualitycoding listening-gate record",
+        "version": "version-independent",
+        "locator": "relevant section recorded in research/SOURCES.md",
+        "accessed": "2026-11-06",
+        "tier": 1
+      }
+    ],
+    "confidence": "corroborated",
+    "evidence_class": "n/a",
+    "contradicted_by": [],
+    "informs": [
+      "D-014",
+      "G-LISTEN/T-025"
+    ]
+  }
+]
