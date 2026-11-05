@@ -102,3 +102,4 @@ Successfully installed CacheControl-0.14.4 PyYAML-6.0.2 boolean.py-5.0 certifi-2
 
 [notice] A new release of pip is available: 25.0.1 -> 26.3
 [notice] To update, run: pip install --upgrade pip
+No known vulnerabilities found
